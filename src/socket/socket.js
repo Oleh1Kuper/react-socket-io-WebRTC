@@ -7,7 +7,7 @@ import {
 import { videoRoomsHandler } from '../store/actions/videoRoomActions';
 import { call, disconnect } from '../utils/webRTCHandler';
 
-const socket = io('https://server-0j8n.onrender.com');
+const socket = io('https://react-socket-io-webrtc-server.onrender.com');
 
 export const connectWithSocket = () => {
   socket.on('connect');

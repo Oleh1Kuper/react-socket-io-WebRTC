@@ -23,9 +23,9 @@ export const getAccessToLocalStream = async () => {
 
 export const connectWithPeerServer = () => {
   peer = new Peer(undefined, {
-    host: 'server-0j8n.onrender.com',
+    host: 'react-socket-io-webrtc-server.onrender.com',
+    path: '/peerjs',
     port: 443,
-    path: '/peer',
   });
 
   peer.on('open', (id) => {
